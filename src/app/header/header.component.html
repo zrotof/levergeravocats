@@ -1,0 +1,52 @@
+<div class="header">
+
+    
+    
+    <img class="logo" routerLink="/" src="../../assets/img/NBS_V1.3.png" alt="Cette image représente le logo du salon de coiffure Nguepi Barber Shop">
+
+    <div class="nav">
+ 
+        <div routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+            <a class="menu" routerLink="/">Accueil</a>
+        </div>
+   
+        <div routerLinkActive="active">
+            <a class="menu" routerLink="/services">Services</a>
+        </div>
+        
+        <!--
+                    <div class="dropdown" ngbDropdown class="d-inline-block" routerLinkActive="active">
+                        <span  ngbDropdownToggle>Services</span>
+                        <div ngbDropdownMenu >
+                            <a class="dropdown-item" >Réservation de billets</a>
+                            <a class="dropdown-item" >Réservation d'hôtels</a>
+                            <a class="dropdown-item" >Location de voitures</a>
+                            <a class="dropdown-item" routerLink="travel-insurrance" >Assurance voyage</a>
+                            <a class="dropdown-item" routerLink="aiport-support" >Assistance aéroportuaire</a>
+                            <a class="dropdown-item" routerLink="tourism" >Tourisme</a>
+                            <a class="dropdown-item" routerLink="/wedding">Organisation de mariages</a>
+                            <a class="dropdown-item" routerLink="/seminar">Organisation de séminaires</a>
+                            <a class="dropdown-item" routerLink="/pilgrimage">Pélerinage</a>
+                        </div>
+                    </div>
+
+        <div routerLinkActive="active">
+            <a class="menu" routerLink="/">Prendre RDV</a>
+        </div>
+        --> 
+        <div routerLinkActive="active">
+            <a class="menu" routerLink="/boutique">Boutique</a>
+        </div>
+
+        <div routerLinkActive="active">
+            <a class="menu" routerLink="/nous-contacter">Nous Contacter</a>
+        </div>
+    </div>
+
+    <div class="burger_menu" (click)="onBurgerMenu()">
+        <span class="line1"></span>
+        <span class="line2"></span>
+        <span class="line3"></span>
+    </div>
+
+</div>

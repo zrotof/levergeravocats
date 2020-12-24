@@ -1,0 +1,7 @@
+.service{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(100, 148, 237, 0.589);
+}

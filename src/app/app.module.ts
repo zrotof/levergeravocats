@@ -18,6 +18,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 
+import { environment } from './../environments/environment';
+
+
 
 @NgModule({
   declarations: [
@@ -33,7 +36,7 @@ import { MatButtonModule } from '@angular/material/button';
     BrowserModule,
     AppRoutingModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyC3Pf60HWKGlvuxXs1SZBx6UPlSk2ZxIzE'
+      apiKey: environment.GOOGLE_MAPS_API_KEY
     }),
     BrowserAnimationsModule,
     MatFormFieldModule,

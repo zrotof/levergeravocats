@@ -1,7 +1,146 @@
 .contact{
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+h1{
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+}
+
+.covid19-advice{
+     width: 85%;
+     margin-bottom:3vh;
+     background-color: white;
+     padding: 3vh;
+     text-align: justify;
+}
+
+.horaires-bloc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 2vh;
+}
+.horaires-bloc > img{
+    width: 17vh;
+    height: 17vh;
+    margin-right: 7vh;
+}
+
+.horaires-bloc > div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 70vh;
+}
+
+.horaires{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.horaires > span{
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 1vh;
+    color: #083860;
+
+}
+
+.horaires-bloc-element{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-bloc{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 105vh;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+.contact-bloc > div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.contact-bloc > div:nth-child(2){
+    align-items: flex-end;
+}
+.contact-bloc > div > div{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(220, 20, 60, 0.514);
 }
+
+.contact-bloc > div > div >span{
+    font-weight: 620;
+}
+
+.phone{
+    width: 5.5vh;
+    height: 5vh;
+    margin-left: 2.1vh;
+    margin-right: 2.1vh;
+}
+
+.fax{
+    width: 5vh;
+    height: 5vh;
+    margin-left: 2.1vh;
+    margin-right: 2.1vh;
+
+}
+
+.mail{
+    width: 5vh;
+    height: 5vh;
+    margin-left: 2.1vh;
+    margin-right: 2.1vh;
+}
+
+.location{
+    width: 9vh;
+    height: 5vh;
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+}
+
+textarea{
+    min-height: 17vh;
+    max-height: 17vh;
+}
+
+mat-form-field {
+    width: 100%;
+}
+
+agm-map{
+    width: 100%;
+    height: 50vh;
+    margin-top: 4vh;
+    margin-bottom: 6vh;
+    padding-right: 15vh;
+    padding-left:15vh;
+}
+

@@ -1,33 +1,44 @@
 .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.header-top{
+    z-index: 2;
     width: 100%;
     position: fixed;
+    top: 0%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 16vh;
-    background: linear-gradient( rgb(2, 0, 20), rgba(0, 0, 0, 0.705));
-
     font-weight: bold;
+    background-color: white;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+
+.top-space{
+    height:16vh;
+    width: 100%;
 }
 
 .logo{
-    width: 20vh;
-    height: 100%;
+    position: relative;
+    width: 30vh;
+    height:100%;
     cursor: pointer;
-    margin-left: 5vh;
-}
-
-.logo:hover{
-    text-decoration: none;
+    margin-left: 15vh;
 }
 
 .nav{
     display: flex;
     height: 100%;
     align-items: center;    
-    margin-right: 5vh;
     opacity: 1;
-   
+    margin-right: 15vh;
 }
 
 .nav > div {
@@ -39,21 +50,31 @@
 }
 .menu{
     
-    color: white;
+    color: #083860;
     text-decoration: none;
     font-size: 1.3em;
 }
 
 menu:hover{
     text-decoration: none;
-    color:white;
+    color: #083860;
 }
+
 
 
 .active{
     padding-top: 14px;
     padding-bottom: 10px ;
     border-bottom: 4px solid rgb(0, 89, 255);
+}
+
+
+.alert-text{
+display: flex;
+flex-direction: column;
+text-align: center;
+width: 100%;
+margin-bottom: 0%;
 }
 
 .burger_menu{
@@ -93,7 +114,7 @@ menu:hover{
     }
 
     .burger_menu span{
-        background-color: white;
+        background-color: #083860;
         width: 4.5vh;
         height: 0.5vh;
         transition: all 0.3s ease;
@@ -106,7 +127,7 @@ menu:hover{
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        background: linear-gradient(  rgba(0, 0, 0, 0.705),  rgba(0, 0, 0, 0.705));
+        background: linear-gradient(  rgba(255, 255, 255, 0.705),  rgba(255, 255, 255, 0.705));
         height: 25vh;
         top: 16vh;
         right: 0%;

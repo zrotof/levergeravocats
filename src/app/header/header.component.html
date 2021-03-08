@@ -1,52 +1,47 @@
 <div class="header">
 
-    
-    
-    <img class="logo" routerLink="/" src="../../assets/img/NBS_V1.3.png" alt="Cette image représente le logo du salon de coiffure Nguepi Barber Shop">
+    <div class="header-top">
+        <img class="logo" routerLink="/" src="../../assets/img/Logo-simple.svg" alt="Cette image représente le logo du cabinet">
 
-    <div class="nav">
- 
-        <div routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-            <a class="menu" routerLink="/">Accueil</a>
-        </div>
-   
-        <div routerLinkActive="active">
-            <a class="menu" routerLink="/services">Services</a>
-        </div>
+        <div class="nav">
+    
+            <div routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                <a class="menu" routerLink="/">Accueil</a>
+            </div>
+    
+            <div routerLinkActive="active">
+                <a class="menu" routerLink="/services">Services</a>
+            </div>
         
-        <!--
-                    <div class="dropdown" ngbDropdown class="d-inline-block" routerLinkActive="active">
-                        <span  ngbDropdownToggle>Services</span>
-                        <div ngbDropdownMenu >
-                            <a class="dropdown-item" >Réservation de billets</a>
-                            <a class="dropdown-item" >Réservation d'hôtels</a>
-                            <a class="dropdown-item" >Location de voitures</a>
-                            <a class="dropdown-item" routerLink="travel-insurrance" >Assurance voyage</a>
-                            <a class="dropdown-item" routerLink="aiport-support" >Assistance aéroportuaire</a>
-                            <a class="dropdown-item" routerLink="tourism" >Tourisme</a>
-                            <a class="dropdown-item" routerLink="/wedding">Organisation de mariages</a>
-                            <a class="dropdown-item" routerLink="/seminar">Organisation de séminaires</a>
-                            <a class="dropdown-item" routerLink="/pilgrimage">Pélerinage</a>
-                        </div>
-                    </div>
+            <div routerLinkActive="active">
+                <a class="menu" routerLink="/publication-formation">Publications / Formations</a>
+            </div>
 
-        <div routerLinkActive="active">
-            <a class="menu" routerLink="/">Prendre RDV</a>
+            <div routerLinkActive="active">
+                <a class="menu" routerLink="/nous-contacter">Nous Contacter</a>
+            </div>
         </div>
-        --> 
-        <div routerLinkActive="active">
-            <a class="menu" routerLink="/boutique">Boutique</a>
-        </div>
-
-        <div routerLinkActive="active">
-            <a class="menu" routerLink="/nous-contacter">Nous Contacter</a>
+       
+        <div class="burger_menu" (click)="onBurgerMenu()">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
         </div>
     </div>
+    
+    <div class="top-space">
 
-    <div class="burger_menu" (click)="onBurgerMenu()">
-        <span class="line1"></span>
-        <span class="line2"></span>
-        <span class="line3"></span>
     </div>
 
+        <ngb-alert  class="alert-text" *ngIf="!alertClosed" (closed)="alertClosed=true">
+                <span><strong>En raison de la crise sanitaire</strong> les conditions d'accueil habituelles ne sont plus assurées. </span>
+                <span>Nous vous invitons à prendre contact par téléphone <strong>(02 23 40 46 21)</strong> ou par courriel <strong>(secretariat@leverger-avocats.fr)</strong> en nous laissant vos coordonnées.</span>
+                <span>Nous vous appellerons dans les meilleurs délais pour fixer un rdv ou vous orienter.</span>
+        </ngb-alert>
 </div>
+
+
+
+
+
+  

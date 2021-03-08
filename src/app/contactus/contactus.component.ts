@@ -7,8 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactusComponent implements OnInit {
 
-  constructor() { }
+  lat: number;
+  lng: number;
+  zoom: number;
+  mapTypeId: string;
 
+  constructor() {
+
+    this.lat =48.107620;
+    this.lng=-1.681500;
+    this.zoom= 17;
+    this.mapTypeId = 'hybrid';
+
+
+   }
   ngOnInit(): void {
   }
 

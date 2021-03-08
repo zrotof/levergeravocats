@@ -1,3 +1,99 @@
 <div class="contact">
-    Pas de contenu pour l'instant
+    <h1>
+        Contact
+    </h1>
+    <span class="covid19-advice">
+        <strong>En raison de la crise sanitaire</strong> les conditions d'accueil habituelles ne sont plus assurées. Nous vous invitons à <strong>privilégier la prise de contact par téléphone  ou par courriel </strong> en nous laissant vos coordonnées.Nous vous appellerons dans les meilleurs délais pour fixer un rdv ou vous orienter.
+    </span>
+    
+    <span>Prise de rendez-vous par téléphone, courriel ou directement au cabinet aux horaires d’ouverture</span>
+
+    <div class="horaires-bloc">
+
+            <img src="../../assets/img/horaires.png" alt="ic">
+   
+        <div>
+            <div class="horaires">
+                <span><strong>Accueil téléphonique</strong></span>
+                <div class="horaires-bloc-element">
+                    <span>Lundi de 9h30 à 12h30</span>
+                    <span>Mardi de 9h30 à 12h30</span>
+                    <span>Jeudi de 9h30 à 12h30</span>
+                </div>
+            </div>
+
+            <div class="horaires">
+                <span><strong>Accueil sur place au cabinet</strong></span>
+                <div class="horaires-bloc-element">
+                    <span>Lundi de 14h30 à 17h30</span>
+                    <span>Mardi de 14h30 à 17h30</span>
+                    <span>Jeudi de 14h30 à 17h30</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="contact-bloc">
+            <div>
+                <div>
+                    <img src="../../assets/img/phone.png" class="phone"> 
+                    <span>02 23 40 46 21</span>
+                </div>
+                <div>
+                    <img src="../../assets/img/mail.png" class="mail">
+                    <span>secretariat@leverger-avocats.fr</span>
+                </div>
+                
+            </div>
+            <div>
+                <div>
+                    <span>02 99 50 39 29</span>
+                    <img src="../../assets/img/fax.png" class="fax">  
+                </div>
+                <div>
+                    <span>39 boulevard de la liberté,35000 - RENNES</span>
+                    <img src="../../assets/img/localisation.png" class="location">
+                </div>
+            </div>
+        </div>
+
+    <form >
+
+        <mat-form-field appearance="fill" >
+            <mat-label>Nom</mat-label>
+            <input matInput placeholder="Entrez votre nom">        
+
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" >
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Entrez votre adresse mail, ex. pat@example.com">        
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" >
+            <mat-label>Téléphone</mat-label>
+            <input matInput placeholder="Entrez votre numéro de téléphone">        
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" >
+            <mat-label>Objet</mat-label>
+            <input matInput placeholder="Veuillez préciser l'objet du message svp">        
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Message</mat-label>
+            <textarea matInput placeholder="Entrez votre message ici"></textarea>
+        </mat-form-field>
+        <button mat-raised-button color="primary">Envoyer</button>
+
+    </form>
+
+    <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [mapTypeId]="mapTypeId">
+        <agm-marker 
+            [latitude]="lat" 
+            [longitude]="lng">
+        </agm-marker>
+    </agm-map>
+
 </div>

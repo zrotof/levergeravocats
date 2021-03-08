@@ -1,0 +1,114 @@
+<div class="pub-form">
+    <h1>Publications et Formations</h1>
+    <span class="introduction">
+        Mélanie LE VERGER forme les travailleurs sociaux, juristes, éducateurs spécialisés, interprètes, personnel médical et toute personne intéressée par les thématiques de la migration depuis une dizaine d’années. Elle intervient régulièrement dans les organismes suivants: IEP Rennes, EHESP, Université de Rennes 2, DISP Bretagne, Coallia, Gisti, centres sociaux et associations, missions locales...
+    </span>
+
+
+    <div class="card item">
+        <div class="publication" (click)="collapse1.toggle()" [attr.aria-expanded]="!isCollapsed1" aria-controls="collapseExample">
+            <div>
+                <span class="type-publication">Publication</span> 
+                <span> <strong>Jan 2021</strong></span>
+            </div>
+            <span class="title">Comment tout ça fontionne ? Pas de panique, je vais tout expliquer dans la suite. restez zen, prenez un café, nous décollons. </span>
+        </div>
+
+        <div class="resume" #collapse1="ngbCollapse" [(ngbCollapse)]="isCollapsed1">
+            
+            <span>L'utilisateur clique sur le ruban grisâtre et il lui apparait un bref résumé du contenu d'un article ou un ensemble d'informations completes sur un sujet.
+                le ruban est constitué de 3 parties: la première indique le type de publication, il s'agit soit d'une 
+                formation soit d'une publication. Oui moi aussi j'ai remarqué la redondance mais que voulez-vous les temps sont dures.
+                Deuxièmement apparait le titre de la publication en gras et enfin la date de parution. Si tout ceci 
+                n'est pas claire, prière de se reférer aux exemples ci-après. Il peut également y avoir tout en bas un lien qui permet de télécharger le contenu complet du résumé .
+            </span>
+            
+        </div>
+    </div>
+
+
+    <div class="card item">
+        <div class="publication" (click)="collapse2.toggle()" [attr.aria-expanded]="!isCollapsed2" aria-controls="collapseExample">
+            <div>
+                <span class="type-formation">Formation</span> 
+                <span> <strong>Jan 2020</strong></span>
+            </div>
+            <span class="title">« Le parjure » L'arme redoutable de la défense pour gagner un procès. </span>
+        </div>
+
+        <div class="resume" #collapse2="ngbCollapse" [(ngbCollapse)]="isCollapsed2">
+            
+            <span>Le parjure est, au sens large, une violation de serment, face à une autorité publique ou à un supérieur hiérarchique, à un corps ou à une communauté.En signant ce traité qu’il était décidé à ne pas respecter, il a commis un parjure.
+                « La différence, monsieur, qui existe entre moi et vous, c’est que ma noblesse est fondée sur le serment, tandis que la vôtre est fondée sur le parjure. » — (Pierre Benoit, Mademoiselle de la Ferté, Albin Michel, 1923, Cercle du Bibliophile, page 17.)
+                J’entendais bien mes propres paroles et consciemment j’affirmai coup sur coup ce mensonge par serment, rien que pour avoir l’amusante satisfaction de commettre un parjure patent. — (Knut Hamsun, La Faim, traduction de Georges Sautreau, 1961, p. 271)
+                Violation de serment.
+                Ne pas respecter la neutralité d’un pays est un véritable parjure.</span>
+            
+        </div>
+    </div>
+
+    <div class="card item">
+        <div class="publication" (click)="collapse3.toggle()" [attr.aria-expanded]="!isCollapsed3" aria-controls="collapseExample">
+            <div>
+                <span class="type-publication">Publication</span> 
+                <span> <strong>Mai 2019</strong></span>
+            </div>
+            <span class="title">Origine de la constituion universelle des droits de l'homme et son évolution à travers le temps</span>
+        </div>
+
+        <div class="resume" #collapse3="ngbCollapse" [(ngbCollapse)]="isCollapsed3">
+            
+            <span>Les droits de l'homme (parfois écrits « droits de l'Homme »N 1), également appelés droits humains ou droits de la personne (par exemple dans un contexte de communication gouvernementale au Canada)N 2, sont un concept à la fois philosophique, juridique et politique, selon lequel tout être humain possède des droits universels, inaliénables, quel que soit le droit positif (droit en vigueur) ou d'autres facteurs locaux tels que l'ethnie, la nationalité ou la religion.
+
+                Selon ce concept, tout être humain.</span>
+            
+        </div>
+    </div>
+
+
+    <div class="card item">
+        <div class="publication" (click)="collapse4.toggle()" [attr.aria-expanded]="!isCollapsed4" aria-controls="collapseExample">
+            <div>
+                <span class="type-formation">Formation</span> 
+                <span> <strong>Nov 2018</strong></span>
+            </div>
+            <span class="title">« Comment bien préparer son dossier lors de recours d'un OQTF  </span>
+        </div>
+
+        <div class="resume" #collapse4="ngbCollapse" [(ngbCollapse)]="isCollapsed4">
+            
+            <span>La décision d'éloignement ou d'obligation de quitter le territoire français est prise par le préfet, notamment en cas de refus de délivrance 
+                de titre de séjour ou de séjour irrégulier en France. Si vous êtes concerné, elle vous oblige à quitter la France par vos propres moyens dans un délai de 30 jours. Dans des situations limitées, elle peut aussi vous obliger à quitter la France sans délai. Un recours est possible.</span>
+            
+        </div>
+    </div>
+
+    <div class="card item">
+        <div class="publication" (click)="collapse5.toggle()" [attr.aria-expanded]="!isCollapsed5" aria-controls="collapseExample">
+            <div>
+                <span class="type-publication">Publication</span> 
+                <span> <strong>Nov 2017</strong></span>
+            </div>
+            <span class="title">« Des demandeurs d’asile piégés par la frontière numérique » La Revue des droits de l’homme </span>
+        </div>
+
+        <div class="resume" #collapse5="ngbCollapse" [(ngbCollapse)]="isCollapsed5">
+            
+            <span>L’expérience en Bretagne de la systématisation de la prise d’empreintes digitales1
+                , par la
+                mise en place d’une nouvelle borne dite « VIS » en préfecture, est une énième modalité de
+                la mise en place de barrières à l’entrée légale des demandeurs d’asile. Cette nouvelle
+                borne vient s’ajouter à la borne Eurodac2
+                 déjà en place dans tous les états de l’espace
+                Shengen.
+                2 La nouvelle borne permet de vérifier les empreintes digitales relevées par les ambassades
+                et consulats .
+            </span>
+            <hr>
+            <a href="#"> Cliquez ici pour télécharger le document pdf</a>
+            
+        </div>
+    </div>
+
+      
+</div>

@@ -31,6 +31,7 @@
     height:100%;
     cursor: pointer;
     margin-left: 15vh;
+    outline: none;
 }
 
 .nav{

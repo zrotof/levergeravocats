@@ -29,14 +29,25 @@ h1{
     position: relative;
 }
 
+.item:hover{
+    cursor: pointer;  
+}
+
 
 .publication{
     display: flex;
     align-items: center;
     padding: 1vh;
     width:100%;
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(245, 245, 245);
+}
 
+.publication:hover{
+    display: flex;
+    align-items: center;
+    padding: 1vh;
+    width:100%;
+    background-color: rgb(189, 189, 189);
 }
 
 
